@@ -3,6 +3,7 @@
   "displayName": "Fast Finger",
   "description": "Duplicate files with custom naming via context menu",
   "version": "0.0.1",
+  "repository": "https://github.com/onkarsalunkhe/FastFingers",
   "engines": {
     "vscode": "^1.116.0"
   },
@@ -38,7 +39,8 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test",
-    "vsce:package": "npm run package && vsce package"
+    "vsce:package": "npm run package && vsce package",
+    "vsce:publish": "npm run package && vsce publish"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.10",
